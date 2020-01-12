@@ -54,3 +54,4 @@ management:
         include: hystrix.stream
 
 
+foo: abcd
