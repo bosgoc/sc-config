@@ -1,11 +1,6 @@
 test: abcd
 
-server:
-  port: 3001
-
 spring:
-  application:
-    name: zuul
   cloud:
     config:
       override-none: true
@@ -16,11 +11,6 @@ spring:
       exclude: WEB-INF/**
     freemarker:
       cache: false    #页面不加载缓存，修改即时生效
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
 zuul:
   retryable: true
