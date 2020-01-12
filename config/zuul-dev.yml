@@ -12,7 +12,7 @@ eureka:
 
 zuul:
   retryable: true
-  #  设置 zuul 不过滤这些协议头
+  #  璁剧疆 zuul 涓嶈繃婊よ繖浜涘崗璁ご
   #  Cookie
   #  Set-Cookie
   #  Authorization
@@ -22,7 +22,7 @@ zuul:
 #    user-service: /user-service/**
 #    order-service: /order-service/**
 
-#设置ribbon重试
+#璁剧疆ribbon閲嶈瘯
 ribbon:
   ConnectTimeout: 1000
   ReadTimeout: 1000
