@@ -7,6 +7,10 @@ spring:
   application:
     name: order-service
   cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
     config:
       override-none: true
   devtools:

@@ -7,6 +7,10 @@ spring:
   application:
     name: item-service
   cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
     config:
       override-none: true
   devtools:
