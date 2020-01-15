@@ -49,6 +49,7 @@ ribbon:
 #          thread:
 #            timeoutInMilliseconds: 500
 
+#暴露端点，使用zuul后，好像不能直接访问微服务hystrix.stream端点
 management:
   endpoints:
     web:
