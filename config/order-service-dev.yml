@@ -21,7 +21,6 @@ spring:
     freemarker:
       cache: false
 
-#放在项目中
 management:
   endpoints:
     web:
