@@ -36,4 +36,4 @@ management:
       exposure:
         include: "*"
 
-test: order service bus
+test: order service bus 8
