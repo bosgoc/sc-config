@@ -21,6 +21,13 @@ spring:
     freemarker:
       cache: false
 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 8001
 
@@ -29,8 +36,3 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"

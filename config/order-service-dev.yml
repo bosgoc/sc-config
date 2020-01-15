@@ -21,6 +21,15 @@ spring:
     freemarker:
       cache: false
 
+#放在项目中
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+
 server:
   port: 8201
 
@@ -30,9 +39,3 @@ eureka:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
 test: order service bus 8
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
