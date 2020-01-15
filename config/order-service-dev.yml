@@ -36,4 +36,4 @@ management:
       exposure:
         include: bus-refresh
 
-test: order service bus 1
+test: order service bus 2
