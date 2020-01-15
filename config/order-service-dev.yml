@@ -29,4 +29,4 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
-test: order service bus 8
+test: order service bus 5
