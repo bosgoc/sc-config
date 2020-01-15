@@ -30,3 +30,9 @@ eureka:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
 test: order service bus 8
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
