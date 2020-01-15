@@ -34,6 +34,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: bus-refresh
+        include: "*"
 
 test: order service bus
