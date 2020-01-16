@@ -11,8 +11,8 @@ spring:
       enabled: true
       trace:
         enabled: true
-    config:
-      override-none: true
+#    config:
+#      override-none: true
   devtools:
     restart:
       enabled: true
