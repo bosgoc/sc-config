@@ -53,5 +53,4 @@ feign:
   hystrix:
     enabled: true
 
-
 test: order service bus 8
