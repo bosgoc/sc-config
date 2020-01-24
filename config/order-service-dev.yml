@@ -1,9 +1,21 @@
 spring:
+  data:
+    solr:   #注意修改ip地址
+      host: http://192.168.237.150:8983/solr/pd
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_database?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
   rabbitmq:
     host: 192.168.237.150
     port: 5672
     username: admin
     password: admin
+      listener:
+        simple:
+          acknowledge-mode: manual
   application:
     name: order-service
   cloud:
@@ -26,7 +38,6 @@ management:
     web:
       exposure:
         include:  "*"
-
 
 server:
   port: 8201
@@ -54,3 +65,11 @@ feign:
     enabled: true
 
 test: order service bus 8
+
+mybatis:
+  #typeAliasesPackage: cn.tedu.ssm.pojo
+  mapperLocations: classpath:com.example.scorderservice.mappers/*.xml
+
+logging:
+  level:
+    com.example.scorderservice.mappers: debug
